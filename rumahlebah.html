@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumah Lebah Simpul Hati - Madu Asli & Produk Lebah Garut</title>
+  <meta name="description" content="Madu asli & produk lebah berkualitas dari Garut. Kesehatan, kecantikan, dan terapi sengat lebah. Pesan via WhatsApp.">
+  <link rel="stylesheet" href="rumahlebah.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#x1F41D;</span>
+        Rumah Lebah<span> Simpul Hati</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#kenapa">Mengapa Kami</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20tanya%20tentang%20produk%20lebah" class="btn btn-wa nav-wa">&#x1F4AC; WhatsApp</a>
+      <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active')">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO - Solusi: Landing page promosi yang jelas -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="badge">Berpengalaman 5+ Tahun &middot; 33 Pelanggan Tetap</div>
+        <h1>Madu Asli & Produk Lebah <em>Berkualitas</em> dari Garut</h1>
+        <p class="hero-sub">Menjaga, melestarikan, dan mengolah kebaikan alam untuk kesehatan keluarga Anda. 100% alami, langsung dari peternakan lebah kami.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20pesan%20produk%20lebah" class="btn btn-wa btn-lg">Pesan Sekarang via WA</a>
+          <a href="#produk" class="btn btn-outline-light btn-lg">Lihat Produk</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-icon">&#x2714;</span> Madu 100% Asli
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">&#x2714;</span> Kirim Se-Indonesia
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">&#x2714;</span> 33+ Pelanggan Setia
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.pexels.com/photos/9105959/pexels-photo-9105959.jpeg?w=500&h=500&fit=crop" alt="Madu asli dalam jar" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- MASALAH PELANGGAN - Solusi: Edukasi madu asli -->
+  <section class="problems">
+    <div class="container">
+      <div class="problems-grid">
+        <div class="problem-card">
+          <img src="https://images.pexels.com/photos/5634212/pexels-photo-5634212.jpeg?w=400&h=250&fit=crop" alt="Madu palsu vs asli" class="problem-img">
+          <h3>Madu Palsu Merajalela</h3>
+          <p>Banyak madu di pasaran yang dicampur gula atau bahan kimia. Kami menjamin keaslian madu langsung dari peternakan.</p>
+        </div>
+        <div class="problem-card">
+          <img src="https://images.pexels.com/photos/4111270/pexels-photo-4111270.jpeg?w=400&h=250&fit=crop" alt="Produk lebah" class="problem-img">
+          <h3>Bingung Pilih Produk Lebah?</h3>
+          <p>Selain madu, lebah menghasilkan royal jelly, propolis, bee pollen, dan lilin. Kami bantu pilih yang tepat untuk Anda.</p>
+        </div>
+        <div class="problem-card">
+          <img src="https://images.pexels.com/photos/3845457/pexels-photo-3845457.jpeg?w=400&h=250&fit=crop" alt="Kesehatan alami" class="problem-img">
+          <h3>Butuh Solusi Kesehatan Alami?</h3>
+          <p>Produk lebah bisa membantu daya tahan tubuh, masalah kulit, nutrisi anak, dan berbagai kebutuhan kesehatan keluarga.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG PRODUK - Solusi: Promosi produk yang jelas -->
+  <section id="produk" class="produk">
+    <div class="container">
+      <h2 class="section-title">Produk Kami</h2>
+      <p class="section-sub">Semua produk diproses langsung dari peternakan lebah kami di Garut</p>
+
+      <div class="produk-tabs">
+        <button class="tab active" onclick="filterProduk('semua', this)">Semua</button>
+        <button class="tab" onclick="filterProduk('kesehatan', this)">Kesehatan</button>
+        <button class="tab" onclick="filterProduk('kecantikan', this)">Kecantikan</button>
+        <button class="tab" onclick="filterProduk('olahan', this)">Olahan</button>
+      </div>
+
+      <div class="produk-grid">
+        <div class="produk-card" data-kategori="kesehatan">
+          <div class="produk-img">
+            <img src="https://images.pexels.com/photos/5634212/pexels-photo-5634212.jpeg?w=400&h=300&fit=crop" alt="Madu Murni Asli">
+            <span class="produk-badge">Best Seller</span>
+          </div>
+          <div class="produk-info">
+            <span class="produk-kategori">Kesehatan</span>
+            <h3>Madu Murni Asli</h3>
+            <p>Madu 100% asli dari lebah ternak kami, tanpa campuran gula atau bahan pengawet.</p>
+            <div class="produk-benefit">
+              <span>&#x2714; Daya tahan tubuh</span>
+              <span>&#x2714; Nutrisi lengkap</span>
+            </div>
+            <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20pesan%20Madu%20Murni%20Asli" class="btn btn-wa btn-full">Pesan via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-kategori="kesehatan">
+          <div class="produk-img">
+            <img src="https://images.pexels.com/photos/4921856/pexels-photo-4921856.jpeg?w=400&h=300&fit=crop" alt="Royal Jelly">
+          </div>
+          <div class="produk-info">
+            <span class="produk-kategori">Kesehatan</span>
+            <h3>Royal Jelly</h3>
+            <p>Superfood dari lebah ratu, kaya nutrisi untuk stamina, kecantikan kulit, dan vitalitas.</p>
+            <div class="produk-benefit">
+              <span>&#x2714; Anti-aging alami</span>
+              <span>&#x2714; Stamina & vitalitas</span>
+            </div>
+            <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20pesan%20Royal%20Jelly" class="btn btn-wa btn-full">Pesan via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-kategori="kesehatan">
+          <div class="produk-img">
+            <img src="https://images.pexels.com/photos/10631301/pexels-photo-10631301.jpeg?w=400&h=300&fit=crop" alt="Propolis">
+          </div>
+          <div class="produk-info">
+            <span class="produk-kategori">Kesehatan</span>
+            <h3>Propolis</h3>
+            <p>Antibiotik alami dari lebah untuk menjaga imunitas dan melawan infeksi secara alami.</p>
+            <div class="produk-benefit">
+              <span>&#x2714; Antibiotik alami</span>
+              <span>&#x2714; Imunitas tubuh</span>
+            </div>
+            <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20pesan%20Propolis" class="btn btn-wa btn-full">Pesan via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-kategori="kesehatan">
+          <div class="produk-img">
+            <img src="https://images.pexels.com/photos/8105066/pexels-photo-8105066.jpeg?w=400&h=300&fit=crop" alt="Bee Pollen">
+          </div>
+          <div class="produk-info">
+            <span class="produk-kategori">Kesehatan</span>
+            <h3>Bee Pollen</h3>
+            <p>Serbuk sari lebah dengan kandungan protein, vitamin, dan mineral untuk nutrisi harian.</p>
+            <div class="produk-benefit">
+              <span>&#x2714; Protein tinggi</span>
+              <span>&#x2714; Energi alami</span>
+            </div>
+            <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20pesan%20Bee%20Pollen" class="btn btn-wa btn-full">Pesan via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-kategori="kecantikan">
+          <div class="produk-img">
+            <img src="https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?w=400&h=300&fit=crop" alt="Skincare Lebah">
+          </div>
+          <div class="produk-info">
+            <span class="produk-kategori">Kecantikan</span>
+            <h3>Skincare Lebah</h3>
+            <p>Produk perawatan kulit berbasis bahan alami dari lebah untuk wajah glowing dan sehat.</p>
+            <div class="produk-benefit">
+              <span>&#x2714; Kulit glowing</span>
+              <span>&#x2714; Anti penuaan</span>
+            </div>
+            <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20tanya%20produk%20Skincare%20Lebah" class="btn btn-wa btn-full">Pesan via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="produk-card" data-kategori="olahan">
+          <div class="produk-img">
+            <img src="https://images.pexels.com/photos/5719608/pexels-photo-5719608.jpeg?w=400&h=300&fit=crop" alt="Olahan Madu">
+          </div>
+          <div class="produk-info">
+            <span class="produk-kategori">Olahan</span>
+            <h3>Olahan Madu</h3>
+            <p>Berbagai olahan madu siap konsumsi: madu jahe, madu lemon, madu kurma, dan lainnya.</p>
+            <div class="produk-benefit">
+              <span>&#x2714; Siap minum</span>
+              <span>&#x2714; Varian rasa</span>
+            </div>
+            <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20pesan%20Olahan%20Madu" class="btn btn-wa btn-full">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYANAN TERAPI -->
+  <section class="terapi">
+    <div class="container">
+      <div class="terapi-content">
+        <div class="terapi-text">
+          <span class="badge-dark">&#x1F3E5; Layanan Spesial</span>
+          <h2>Terapi Sengat Lebah</h2>
+          <p>Terapi sengat lebah (Apitherapy) adalah metode pengobatan tradisional yang menggunakan sengat lebah untuk membantu mengatasi berbagai masalah kesehatan.</p>
+          <ul class="terapi-list">
+            <li>&#x2705; Nyeri sendi & rematik</li>
+            <li>&#x2705; Gangguan saraf</li>
+            <li>&#x2705; Meningkatkan sirkulasi darah</li>
+            <li>&#x2705; Ditangani oleh terapis berpengalaman</li>
+          </ul>
+          <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20konsultasi%20tentang%20Terapi%20Sengat%20Lebah" class="btn btn-wa btn-lg">&#x1F4AC; Konsultasi Gratis</a>
+        </div>
+        <div class="terapi-visual">
+          <img src="https://images.pexels.com/photos/5247996/pexels-photo-5247996.jpeg?w=500&h=500&fit=crop" alt="Terapi Sengat Lebah - Apitherapy" class="terapi-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KENAPA PILIH KAMI - Solusi: Bangun kepercayaan -->
+  <section id="kenapa" class="kenapa">
+    <div class="container">
+      <h2 class="section-title">Mengapa Pilih Kami?</h2>
+      <p class="section-sub">Bukan sekadar jualan madu, kami menjaga kebaikan alam untuk kesehatan Anda</p>
+      <div class="kenapa-grid">
+        <div class="kenapa-card">
+          <div class="kenapa-number">01</div>
+          <h3>100% Madu Asli</h3>
+          <p>Langsung dari peternakan lebah kami sendiri di Garut. Tanpa campuran gula, tanpa pengawet, tanpa bahan kimia.</p>
+        </div>
+        <div class="kenapa-card">
+          <div class="kenapa-number">02</div>
+          <h3>Pengalaman 5+ Tahun</h3>
+          <p>Lebih dari 5 tahun berpengalaman dalam beternak lebah dan mengolah produk lebah berkualitas tinggi.</p>
+        </div>
+        <div class="kenapa-card">
+          <div class="kenapa-number">03</div>
+          <h3>Tim 13 Orang</h3>
+          <p>Didukung oleh 13 orang tim yang berdedikasi dalam peternakan, pengolahan, dan pelayanan pelanggan.</p>
+        </div>
+        <div class="kenapa-card">
+          <div class="kenapa-number">04</div>
+          <h3>Produk Lengkap</h3>
+          <p>Tidak hanya madu — kami menyediakan royal jelly, propolis, bee pollen, skincare, hingga terapi sengat lebah.</p>
+        </div>
+        <div class="kenapa-card">
+          <div class="kenapa-number">05</div>
+          <h3>Edukasi Madu Asli</h3>
+          <p>Kami edukasi pelanggan cara membedakan madu asli vs palsu agar Anda tidak tertipu produk tiruan.</p>
+        </div>
+        <div class="kenapa-card">
+          <div class="kenapa-number">06</div>
+          <h3>Konsultasi Gratis</h3>
+          <p>Bingung pilih produk? Konsultasi gratis via WhatsApp untuk menemukan produk yang tepat untuk kebutuhan Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARGET PELANGGAN -->
+  <section class="target">
+    <div class="container">
+      <h2 class="section-title section-title-light">Produk Kami Cocok Untuk</h2>
+      <div class="target-grid">
+        <div class="target-card">
+          <img src="https://images.pexels.com/photos/1128318/pexels-photo-1128318.jpeg?w=300&h=200&fit=crop" alt="Keluarga sehat" class="target-img">
+          <h3>Keluarga Sehat</h3>
+          <p>Keluarga yang peduli dengan nutrisi dan kesehatan anggota keluarga secara alami.</p>
+        </div>
+        <div class="target-card">
+          <img src="https://images.pexels.com/photos/3764016/pexels-photo-3764016.jpeg?w=300&h=200&fit=crop" alt="Ibu 35+ tahun" class="target-img">
+          <h3>Ibu 35+ Tahun</h3>
+          <p>Wanita yang ingin menjaga penampilan dan kecantikan kulit dengan bahan alami.</p>
+        </div>
+        <div class="target-card">
+          <img src="https://images.pexels.com/photos/3845459/pexels-photo-3845459.jpeg?w=300&h=200&fit=crop" alt="Orang tua dan anak" class="target-img">
+          <h3>Orang Tua & Anak</h3>
+          <p>Keluarga yang memiliki masalah kesehatan anak dan butuh solusi nutrisi alami.</p>
+        </div>
+        <div class="target-card">
+          <img src="https://images.pexels.com/photos/8317775/pexels-photo-8317775.jpeg?w=300&h=200&fit=crop" alt="Kesehatan" class="target-img">
+          <h3>Penderita Penyakit</h3>
+          <p>Orang dengan masalah kesehatan tertentu yang mencari pengobatan pendamping alami.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI - Solusi: Social proof untuk promosi -->
+  <section id="testimoni" class="testimoni">
+    <div class="container">
+      <h2 class="section-title">Kata Pelanggan Kami</h2>
+      <p class="section-sub">Bergabung dengan 33+ pelanggan tetap yang sudah merasakan manfaatnya</p>
+      <div class="testimoni-grid">
+        <div class="testimoni-card">
+          <div class="stars">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</div>
+          <p>"Madunya beneran asli, beda banget sama yang biasa saya beli di toko. Anak saya jadi jarang sakit sejak rutin minum madu dari sini."</p>
+          <div class="testimoni-author">
+            <div class="author-avatar" style="background: #f6d365">I</div>
+            <div>
+              <strong>Ibu Ratna</strong>
+              <span>Pelanggan Tetap &middot; Garut</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimoni-card">
+          <div class="stars">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</div>
+          <p>"Saya pakai Royal Jelly dan Propolis rutin. Kulit lebih cerah, badan lebih fit. Recommended banget!"</p>
+          <div class="testimoni-author">
+            <div class="author-avatar" style="background: #a18cd1">S</div>
+            <div>
+              <strong>Siti Nurjanah</strong>
+              <span>Pelanggan Tetap &middot; Bandung</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimoni-card">
+          <div class="stars">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</div>
+          <p>"Terapi sengat lebahnya luar biasa. Nyeri sendi saya berkurang drastis. Terapisnya juga sangat profesional."</p>
+          <div class="testimoni-author">
+            <div class="author-avatar" style="background: #667eea">B</div>
+            <div>
+              <strong>Pak Bambang</strong>
+              <span>Pelanggan Tetap &middot; Garut</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUKASI - Solusi: Konten edukasi cara bedain madu asli -->
+  <section class="edukasi">
+    <div class="container">
+      <h2 class="section-title">Cara Membedakan Madu Asli vs Palsu</h2>
+      <p class="section-sub">Edukasi dari kami agar Anda tidak tertipu madu palsu</p>
+      <div class="edukasi-banner">
+        <img src="https://images.pexels.com/photos/4111270/pexels-photo-4111270.jpeg?w=1100&h=350&fit=crop" alt="Madu asli vs palsu">
+        <div class="edukasi-banner-overlay">
+          <p>Tahukah Anda? Lebih dari 70% madu di pasaran dicampur dengan gula atau sirup jagung.</p>
+        </div>
+      </div>
+      <div class="edukasi-grid">
+        <div class="edu-card">
+          <div class="edu-number">1</div>
+          <h3>Tes Tisu</h3>
+          <p>Teteskan madu di tisu. Madu asli tidak meresap dan tetap berbentuk bulatan, sedangkan madu palsu cepat meresap.</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-number">2</div>
+          <h3>Tes Air</h3>
+          <p>Masukkan madu ke gelas air. Madu asli langsung tenggelam ke dasar tanpa larut, madu palsu langsung larut.</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-number">3</div>
+          <h3>Tes Api</h3>
+          <p>Celupkan korek api ke madu lalu nyalakan. Madu asli bisa menyala karena kadar air rendah, madu palsu sulit menyala.</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-number">4</div>
+          <h3>Rasa & Aroma</h3>
+          <p>Madu asli memiliki aroma bunga yang khas dan rasa yang tidak terlalu manis. Madu palsu terasa manis berlebihan seperti gula.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ - Solusi: Jawab keraguan pelanggan -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section-title">Pertanyaan yang Sering Ditanyakan</h2>
+      <div class="faq-list">
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+          <div class="faq-question">
+            <span>Bagaimana cara memastikan madu ini asli?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Madu kami dipanen langsung dari peternakan lebah kami sendiri di Garut. Anda bisa melakukan tes keaslian madu (tes tisu, tes air, tes api) dan hasilnya pasti lolos. Kami juga membuka kunjungan ke peternakan bagi yang ingin melihat langsung.</p>
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+          <div class="faq-question">
+            <span>Apakah bisa dikirim ke luar Garut?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Ya, kami melayani pengiriman ke seluruh Indonesia menggunakan jasa ekspedisi terpercaya dengan packaging aman anti tumpah.</p>
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+          <div class="faq-question">
+            <span>Produk mana yang cocok untuk anak-anak?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Untuk anak di atas 1 tahun, kami rekomendasikan Madu Murni Asli. Untuk anak yang sering sakit, bisa ditambah Bee Pollen. Konsultasi gratis via WhatsApp untuk rekomendasi yang lebih tepat.</p>
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+          <div class="faq-question">
+            <span>Bagaimana cara memesan?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Cukup klik tombol WhatsApp di halaman ini, chat langsung dengan Kak Tiwi, pilih produk, transfer, dan produk akan segera dikirim. Mudah dan cepat!</p>
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+          <div class="faq-question">
+            <span>Apakah terapi sengat lebah aman?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Terapi dilakukan oleh terapis berpengalaman. Sebelum terapi, dilakukan tes alergi terlebih dahulu. Terapi ini sudah banyak digunakan secara tradisional dan modern di berbagai negara.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta" style="background: linear-gradient(rgba(45, 32, 6, 0.85), rgba(45, 32, 6, 0.9)), url('https://images.pexels.com/photos/9105959/pexels-photo-9105959.jpeg?w=1200&h=600&fit=crop') center/cover no-repeat">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Siap Merasakan Manfaat Produk Lebah Asli?</h2>
+        <p>Konsultasi gratis dengan Kak Tiwi untuk menemukan produk yang tepat untuk kebutuhan kesehatan keluarga Anda.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20mau%20konsultasi%20produk%20lebah%20yang%20cocok%20untuk%20saya" class="btn btn-wa btn-lg">Chat WhatsApp Sekarang</a>
+          <a href="tel:+6285864207676" class="btn btn-outline-light btn-lg">&#x1F4DE; Telepon Langsung</a>
+        </div>
+        <p class="cta-note">Balas cepat &middot; Konsultasi gratis &middot; Tanpa komitmen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="kontak">
+    <div class="container">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <div class="kontak-content">
+        <div class="kontak-info">
+          <div class="kontak-item">
+            <span class="kontak-icon">&#x1F4CD;</span>
+            <div>
+              <h4>Alamat</h4>
+              <p>Kecamatan Garut Kota, Garut<br>Jawa Barat, Indonesia</p>
+            </div>
+          </div>
+          <div class="kontak-item">
+            <span class="kontak-icon">&#x1F4F1;</span>
+            <div>
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/6285864207676">0858-6420-7676</a></p>
+            </div>
+          </div>
+          <div class="kontak-item">
+            <span class="kontak-icon">&#x1F552;</span>
+            <div>
+              <h4>Jam Operasional</h4>
+              <p>Senin - Sabtu: 08.00 - 17.00 WIB<br>Minggu: By Appointment</p>
+            </div>
+          </div>
+          <div class="kontak-item">
+            <span class="kontak-icon">&#x1F41D;</span>
+            <div>
+              <h4>Pemilik</h4>
+              <p>Tiwi Nurhasanah<br>Rumah Lebah Simpul Hati</p>
+            </div>
+          </div>
+        </div>
+        <form class="kontak-form" onsubmit="event.preventDefault(); window.open('https://wa.me/6285864207676?text=' + encodeURIComponent('Halo Kak Tiwi, saya ' + this.nama.value + '. ' + this.pesan.value), '_blank')">
+          <h3>Kirim Pesan</h3>
+          <div class="form-group">
+            <input type="text" name="nama" placeholder="Nama Lengkap" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="telp" placeholder="No. WhatsApp">
+          </div>
+          <div class="form-group">
+            <select name="keperluan">
+              <option value="">-- Pilih Keperluan --</option>
+              <option value="pesan">Pesan Produk</option>
+              <option value="konsultasi">Konsultasi Produk</option>
+              <option value="terapi">Terapi Sengat Lebah</option>
+              <option value="reseller">Jadi Reseller</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea name="pesan" placeholder="Tulis pesan Anda..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-wa btn-full">&#x1F4AC; Kirim via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>&#x1F41D; Rumah Lebah Simpul Hati</h3>
+          <p>Menjaga, Melestarikan, Mengelola, dan Mengolah Kebaikan Alam untuk kesehatan keluarga Indonesia.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Menu</h4>
+          <a href="#home">Beranda</a>
+          <a href="#produk">Produk</a>
+          <a href="#kenapa">Mengapa Kami</a>
+          <a href="#testimoni">Testimoni</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+        <div class="footer-links">
+          <h4>Produk</h4>
+          <a href="#produk">Madu Murni</a>
+          <a href="#produk">Royal Jelly</a>
+          <a href="#produk">Propolis</a>
+          <a href="#produk">Bee Pollen</a>
+          <a href="#produk">Skincare</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rumah Lebah Simpul Hati &middot; Garut, Jawa Barat &middot; ID: UNK-2608-M2A2W</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON - Solusi: Akses mudah untuk order -->
+  <a href="https://wa.me/6285864207676?text=Halo%20Kak%20Tiwi,%20saya%20tertarik%20dengan%20produk%20lebah" class="wa-float" target="_blank">
+    <span class="wa-float-icon">&#x1F4AC;</span>
+    <span class="wa-float-text">Chat Kami</span>
+  </a>
+
+  <script>
+    function filterProduk(kategori, btn) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.produk-card').forEach(card => {
+        if (kategori === 'semua' || card.dataset.kategori === kategori) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

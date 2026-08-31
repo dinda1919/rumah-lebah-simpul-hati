@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Dindin</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Dindin<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active')">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="greeting">Hello, I'm</p>
+        <h1>Dindin</h1>
+        <h2>Web Developer & Designer</h2>
+        <p class="tagline">Saya membuat website modern, responsif, dan user-friendly.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Lihat Project</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="avatar-placeholder">D</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="about-img-placeholder"></div>
+        </div>
+        <div class="about-text">
+          <h3>Seorang Developer yang Passionate</h3>
+          <p>Saya adalah seorang web developer dengan pengalaman dalam membangun aplikasi web modern. Saya memiliki passion dalam menciptakan solusi digital yang efektif dan menarik secara visual.</p>
+          <p>Saya selalu berusaha untuk belajar teknologi baru dan meningkatkan kemampuan saya untuk memberikan hasil terbaik dalam setiap project.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Tahun Pengalaman</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Project Selesai</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Client Puas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">&#x1F310;</div>
+          <h3>HTML5</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+          <span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#x1F3A8;</div>
+          <h3>CSS3</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#x26A1;</div>
+          <h3>JavaScript</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#x2699;</div>
+          <h3>React</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#x1F4BE;</div>
+          <h3>Node.js</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&#x1F5C3;</div>
+          <h3>Database</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 72%"></div></div>
+          <span class="skill-percent">72%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2)">
+            <span class="project-tag">Web App</span>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Website</h3>
+            <p>Website toko online dengan fitur keranjang belanja, pembayaran, dan manajemen produk.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c)">
+            <span class="project-tag">Landing Page</span>
+          </div>
+          <div class="project-info">
+            <h3>Company Profile</h3>
+            <p>Landing page modern untuk perusahaan dengan animasi scroll dan desain responsif.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe)">
+            <span class="project-tag">Dashboard</span>
+          </div>
+          <div class="project-info">
+            <h3>Admin Dashboard</h3>
+            <p>Dashboard admin dengan grafik interaktif, manajemen user, dan laporan data.</p>
+            <div class="project-tech">
+              <span>React</span><span>Chart.js</span><span>Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">&#x1F4E7;</span>
+            <div>
+              <h4>Email</h4>
+              <p>dindin@email.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x1F4F1;</span>
+            <div>
+              <h4>Phone</h4>
+              <p>+62 812 3456 7890</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x1F4CD;</span>
+            <div>
+              <h4>Location</h4>
+              <p>Indonesia</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Nama Lengkap" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Pesan Anda..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Dindin. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
